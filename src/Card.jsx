@@ -25,7 +25,7 @@ function Card({props, press}) {
                             return stars;
                         })()}
                     </div>
-                    <h4><FontAwesomeIcon icon={faIndianRupeeSign} flip />&nbsp;
+                    <h4><FontAwesomeIcon icon={faIndianRupeeSign} />&nbsp;
                     { props.offer === undefined ? props.mrp : (props.mrp - (props.mrp * (props.offer/100))).toFixed(2) }
                     </h4>
                     <p className={`priceDecrease ${props.offer === undefined ? 'd-none' : ''}`}><span>M.R.P: </span><s>{props.mrp}</s> (<b>{props.offer}% off</b>)</p>
